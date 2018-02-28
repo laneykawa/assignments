@@ -1,7 +1,5 @@
-var helloCall = document.getElementByID('hello');
-
 function helloWorld(){
-	helloCall.innerHTML
+	document.getElementById('hello').innerHTML = 'Hello World'
 };
 
 helloWorld();
