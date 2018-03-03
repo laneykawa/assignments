@@ -1,0 +1,4 @@
+var stringFunction = function (str){
+    
+
+}

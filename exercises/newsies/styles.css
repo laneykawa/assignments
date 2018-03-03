@@ -1,0 +1,77 @@
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 46px;
+    color: white;
+    background-color: slategray;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 20px;
+    margin: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+  }
+
+li {
+    display: inline;
+    padding: 35px;
+    text-align: auto;
+    cursor: pointer;
+    text-decoration-line: underline;
+    align-content: center;
+}
+
+.date {
+    font-weight: bold;
+    text-align: right;
+    background-color: black;
+    color: white;
+    padding-inline-end: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33%;
+    float: center;
+
+h2{
+}
+
+.article {
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
+.classy {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.newsline {
+    
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
