@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background-image:url(https://orig00.deviantart.net/41dc/f/2016/104/4/0/neko_atsume_background_with_all_34_non_rare_cats_by_dragonmurr-d9yx6r4.png);
+    height: 200px;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    /* transform: translateY(-50%) translateX(-50%); */
+    align-items: center;
+    text-align: center;
+    color: hotpink;
+}
+
+nav {
+    position: fixed; 
+    background-color: hotpink;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.blogs {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+article {
+    height: 100%;
+    border: 5px black; 
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+a {
+    top: 50%;
+}

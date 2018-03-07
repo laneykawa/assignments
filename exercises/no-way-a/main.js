@@ -1,5 +1,6 @@
 let removeA = function(str) {
-    console.log (str.replace("a",""))
+    var newString = str.replace("a","")
+    return newString.replace ("A", "");
 }
 
-removeA("lAney")
+console.log(removeA("laAney"));

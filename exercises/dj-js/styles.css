@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: gray;
+    border: 5px black;
+    border-radius: 20px;
+}

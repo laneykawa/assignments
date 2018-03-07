@@ -59,7 +59,20 @@ var localDjs = [
         favoriteArtists: ["Aly and Fila", "Tchami"],
         residentDjAt: ["texas-club", "Sky"],
         djSoftware: "traktor",
-    }
+    },
+    {
+        firstName: "Laney",
+        lastName: "K",
+        djName: "DJ Miss Mariko",
+        gender: "female",
+        age: 28, 
+        genreLikesToDj: "funk",
+        subGenreLikesToDj: [ "90's hip-hop", "dirty-south", "west-coast style"],
+        equipment: "Pioneer sz",
+        favoriteArtists: ["Gareth Emery", "Armin Van Buren"],
+        residentDjAt: ["Huka Bar", "Sky"],
+        djSoftware: "Serato Scratch Live",
+    },
 ];
 
 localDjs[0].infoAboutDj();
