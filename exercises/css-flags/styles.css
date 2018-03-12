@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.rectangle {
+    background-color: black;
+    width: 500px;
+}
+
+.france {
+    background-color: black;
+    height: 300px;
+    width: 32%; 
+    display: inline-block}
+
+
+.blue {
+    background-color: blue;
+}
+
+.white {
+    background-color: white;
+}
+
+.red {
+    background-color: red;
+}

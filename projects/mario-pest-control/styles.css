@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper::after {
+    background: url(http://getwallpapers.com/wallpaper/full/2/f/2/556337.jpg);
+    opacity: .20;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+header {
+    background: blue;
+    border: solid red 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.list{
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+footer {
+    border: solid red 5px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    display: inline-flex;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    margin: 2px;
+    padding: 2px;
+}
+
+.total {
+    background: chartreuse;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: solid black 5px;
+    padding: 20px;
+    font-size: 35px;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    background: orange;
+}
+
+.totalAmt{
+    position: relative;
+    border: solid 5px black;
+    height: 60px; 
+    width: 200px; 
+    margin: 0 auto;
+}

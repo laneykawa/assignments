@@ -3,7 +3,10 @@
 }
 
 .box {
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
     background-color: gray;
-    border: 5px black;
-    border-radius: 20px;
 }

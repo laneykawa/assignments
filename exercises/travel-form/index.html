@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Travel Form</h1>
+    <div class="wrapper">
+    <form name="travelinfo">
+        First Name:<br><input id="firstname" name="firstname" placeholder="First Name" type="text"/>
+        <br>
+        Last Name:<br><input name="lastname"placeholder="Last Name" type="text"/>
+        <br>
+        Age:<br><input name="age"placeholder="Age" type="number"/>
+        <br>
+        Gender:
+        <br>
+       <input value="male" name="gender" type="radio"/> Male
+       <input value="female" name="gender" type="radio"/> Female
+        <br>
+        Location:
+        <br>
+        <select name="destination" id="location" size="1">
+            <option id="hawaii" value="Hawaii" name="destination"> Hawaii</option>
+            <option id="japan"value="Japan" name="destination"> Japan</option>
+            <option id="france" value="France" name="destination"> France</option>
+        </select>
+        <br>
+        Dietary Restrictions:
+        <br>
+        <input value="Regular" name="food" type="checkbox"/> Regular
+        <input value="Vegetarian" name="food" type="checkbox"/> Vegetarian
+        <input value="Kosher" name="food" type="checkbox"/> Kosher 
+        <input value="Lactose Free" name="food" type="checkbox"/> Lactose Free 
+        <br>
+        <button id="submit">Submit</button>
+    </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

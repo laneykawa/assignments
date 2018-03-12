@@ -85,7 +85,6 @@ console.log(food);
 //Join
 
 var joinFunction = function (){
-    return food.join(" ");
+    return food.join(",");
 }
-joinFunction();
-console.log(food);
+console.log(joinFunction(food));
