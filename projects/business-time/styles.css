@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    height: 150px;
+    background: linear-gradient(to bottom right, #eeddd7, #f2c1b1);
+}
+
+.headerborder {
+  
+}
+
+body {
+    height: 200px;
+}
+
+ul {
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+a {
+    display: inline;
+    color: #ffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner {
+    position: relative;
+    background-color :gray;
+    height: 400px;
+
+}
+
+.servicessection {
+    height: 400px;
+    background-color: pink;
+}
+
+.aboutsection {
+    background-color :gray;
+    height: 400px;
+
+}
+
+.contactsection {
+    background-color :pink;
+    height: 400px;
+
+}
+
+footer {
+    height: 100px;
+    background: linear-gradient(to bottom right, #eeddd7, #f2c1b1);
+}

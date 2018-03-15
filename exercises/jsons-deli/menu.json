@@ -1,0 +1,95 @@
+{
+    "appetizers": [
+        {
+        "name": "fried pickles",
+        "ingredients": ["pickles", "batter"],
+        "description": "some delicous pickles that are deep fried to have a crispy crunch"
+        },
+        {
+        "name": "jalapeno poppers",
+        "ingredients": ["jalepenos", "cheese", "batter"],
+        "description": "delicious cheesy jalepeno poppers"
+        },
+
+        {
+        "name": "lettuce wraps",
+        "ingredients": ["lettuce", "meat"],
+        "description": "lettuce wrapped with meat"
+        }
+    ],
+        
+    "cold sandwiches": [
+        {
+        "name": "turkey sandwich",
+        "ingredients": ["turkey", "cheese", "tomato", "lettuce", "union", "mayo"],
+        "description": " a delicous turkey sandwich"
+        },
+
+        {
+        "name": "club sandwich",
+        "ingredients": ["ham", "turkey", "roast beef", "cheese", "tomato", "lettuce", "union", "mayo"],
+        "description": " a delicous club sandwich"
+        },
+
+        {
+        "name": "ham sandwich",
+        "ingredients": ["ham", "cheese", "tomato", "lettuce", "union", "mayo"],
+        "description": " a delicous turkey sandwich"
+        }
+    ],
+
+    "hot sandwiches":[
+        {
+        "name": "turkey melt",
+        "ingredients": ["turkey", "cheese", "bread"],
+        "description": " a delicous hot turkey melt sandwich"
+        },
+        {
+        "name": "french dip",
+        "ingredients": ["roast beef", "cheese", "bread", "au jus"],
+        "description": " a delicous french dip sandwich"
+        },
+        {
+        "name": "grilled cheese",
+        "ingredients": ["cheese", "bread"],
+        "description": " a delicous grilled cheese sandwich"            
+        }
+
+    ],
+        
+    "desserts": [
+        {
+        "name":"ice-cream", 
+        "ingredients":["cream", "sugar", "fruit"], 
+        "description": "refreshing and cold ice cream of any flavor"
+        },
+        {
+        "name":"cake", 
+        "ingredients":["flour", "sugar", "vanilla", "cocoa"], 
+        "description": "light and refreshing cake"
+        },
+        {
+        "name": "cheesecake", 
+        "ingredients":["flour", "sugar", "vanilla", "cream cheese"], 
+        "description":"delicous new york cheesecake"    
+        }      
+    ],
+        
+    "drinks": [
+        {
+        "name":"coke", 
+        "ingredients": ["sugar", "flavor", "carbonated water"],
+        "description": "refreshing coke"
+        },
+        {
+        "name":"sprite", 
+        "ingredients": ["sugar", "flavor", "carbonated water"],
+        "description": "refreshing sprite"         
+        },
+        {
+        "name":"dr. pepper", 
+        "ingredients": ["sugar", "flavor", "carbonated water"],
+        "description": "refreshing Dr. Pepper"         
+        }      
+    ]
+}

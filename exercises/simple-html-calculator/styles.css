@@ -3,3 +3,70 @@
     height: 50px; 
     width: 100%;
 }
+
+.box {
+    border: solid 2px black;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: bisque;
+    font-size: 30px;
+}
+
+.add {
+    border: solid 2px black;
+    padding: 7px;
+    width: 380px;
+    background: whitesmoke;
+}
+
+.subtract {
+    border: solid 2px black;
+    padding: 7px;
+    width: 380px;
+    background: whitesmoke;
+}
+
+.multiply {
+    border: solid 2px black;
+    padding: 7px;
+    width: 380px;
+    background: whitesmoke;
+}
+
+input {
+    padding: 20px;
+    font-size: 15px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    background: turquoise;
+    padding: 20px;
+}
+
+.multiply {
+    display: inline-block;
+}
+
+.styleOutput {
+    display: inline-block; 
+    font-size: 20px;
+    text-align: center;
+    vertical-align: -1px;
+    padding-left: 10px; 
+
+}
+
+button {
+    padding: 15px;
+    width: 75px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 12px;
+    font-size: 12px;
+    text-align: center;
+
+}

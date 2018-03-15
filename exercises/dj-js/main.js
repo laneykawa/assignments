@@ -1,11 +1,11 @@
 var button = document.getElementById ("button"); 
 
-button.addEventListener("mouseover", function(){
-    button.style.backgroundColor = "blue";
-    }
-);
+// button.addEventListener("mouseover", function(){
+//     button.style.backgroundColor = "blue";
+//     }
+// );
 
-button.addEventListener("onmousedown", function(){
+button.addEventListener("onclick", function(){
     button.style.backgroundColor = "red";
     }
 );

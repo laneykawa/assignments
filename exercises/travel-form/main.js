@@ -14,28 +14,38 @@ submit.addEventListener("click", function(e){
     }
 )
 
-// submit.addEventListener("click", function(e){
-//     var checkedGender = [];
-//     var checkedGenBox = document.querySelectorAll("input[name=gender]:checked");
-//     for (var i= 0; i <checkedGenBox.lenth; i++){
-//     checkedGender.push(checkedGenBox[i].value);
-// }
-// console.log(checkedGender)
-// }
-// )
 
-// var location = ""
-// var locationFunction = function (){
-//     if (document.travelinfo.location.checked === true){
-//         location.push(document.travelinfo.location.checked)
+// var locationSelection = []
+// var location = document.getElementById("location");
+// var hawaii = document.getElementById("hawaii");
+// var france = document.getElementById("france");
+// var japan = document.getElementById ("japan")
+
+// location.addEventListener("input", locationFunction);
+
+// location.addEventListener("change", locationFunction);{
+//     locationSelection = event.target.value
+//     console.log()
+// }
+
+
+// // listen to hear if box is checked
+// // if checked store
+// // take stored sting and pull into alert
+
+// var foodSelected = [];
+// var regular = document.getElementById("regular");
+// var vegetarian = document.getElementById("vegetarian");
+// var kosher = document.getElementById("kosher");
+// var lactoseFree = document.getElementById ("LactoseFree")
+
+// var dietaryRestrictions = function(event){
+//     if (event.target.checked){
+//         foodSelected.push(event.target.name){
+//         } else {
+//             var index = foodSelected.indexOf(event.target.name);
+//             foodSelected
+//         }
+
 //     }
 // }
-
-// locationFunction();
-
-
-// listen to hear if box is checked
-// if checked store
-// take stored sting and pull into alert
-
-

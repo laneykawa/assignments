@@ -50,8 +50,6 @@ multiplyButton.addEventListener("click", function(e){
 })
 
 
-
-
 // var form = document.getElementById ("submit")
 // var input = document.getElementById ("input")
 // var p = document.getElementById ("output")
