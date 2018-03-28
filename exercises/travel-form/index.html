@@ -10,7 +10,7 @@
 <body>
     <h1>Travel Form</h1>
     <div class="wrapper">
-    <form name="travelinfo">
+    <form id="form" name="travelinfo">
         First Name:<br><input id="firstname" name="firstname" placeholder="First Name" type="text"/>
         <br>
         Last Name:<br><input name="lastname"placeholder="Last Name" type="text"/>
@@ -19,8 +19,8 @@
         <br>
         Gender:
         <br>
-       <input value="male" name="gender" type="radio"/> Male
-       <input value="female" name="gender" type="radio"/> Female
+       <input value="Male" name="gender" type="radio"/> Male
+       <input value="Female" name="gender" type="radio"/> Female
         <br>
         Location:
         <br>
@@ -32,13 +32,14 @@
         <br>
         Dietary Restrictions:
         <br>
-        <input id="regular" value="Regular" name="food" type="checkbox"/> Regular
-        <input id="vegetarian" value="Vegetarian" name="food" type="checkbox"/> Vegetarian
-        <input id="kosher"value="Kosher" name="food" type="checkbox"/> Kosher 
-        <input id="lactoseFree"value="Lactose Free" name="food" type="checkbox"/> Lactose Free 
+        <input class="food" value="Regular" name="regular" id="regular"  type="checkbox"/> Regular
+        <input class="food" value="Vegetarian" name="vegetarian" id="vegetarian" type="checkbox"/> Vegetarian
+        <input class="food" value="Kosher" name="kosher" id="kosher" type="checkbox"/> Kosher 
+        <input class="food" value="Lactose Free" name="lactoseFree" id="lactoseFree" type="checkbox"/> Lactose Free 
         <br>
-        <button id="submit">Submit</button>
+        <button >Submit</button>
     </form>
+   
     </div>
     <script src="main.js"></script>
 </body>

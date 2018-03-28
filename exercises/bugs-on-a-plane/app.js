@@ -1,25 +1,24 @@
-var form = document.getElementById("arline-form");
+var form = document.getElementById("airline-form");
 var submit = document.getElementById("submit");
-var query = document.querySelector;
-var firstName = document.getElementsByName.first-name.value;
-var lastName = document.getElementsByName.last-name.value;
-var age = document.getElementsByName.age.value;
-var gender = document.getElementsByName.gender.value;
-var location = document.getElementsByName.location.value;
-var diet = [];
+// var query = document.querySelector();
 
-function formAlert() {
-    if (document.getElementsByName.diet.value.checked = "vegan") {
+var formAlert = function (){
+    var firstName = form.elements["first-name"].value;
+    var lastName = form.elements["last-name"].value;
+    var age = form.elements["age"].value;
+    var gender = form.elements["gender"].value;
+    var location = form.elements["travel-location"].value;
+    var diet = [];
+    if (form.elements['vegan'].checked) {
         diet.push(document.getElementById("vegan").value);
     }
-    else if (document.getElementsByName.diet.value.checked = "gluten-free" ) {
+    if (form.elements['gluten'].checked) {
         diet.push(document.getElementById('gluten').value);
     }
-    else if (document.getElementsByName.diet.value.checked = "gluten-free") {
+    if (form.elements['paleo'].checked) {
         diet.push(document.getElementById('paleo').value);
-    }
+    } 
     alert("First Name: " + firstName + "\nLast Name: " + lastName + "\nAge: " + age + "\nGender: " + gender + "\nTravel Location: " + location + "\nDiet: " + diet + "\nAwesome, now if you die, it won't be an accident..");
 }
 
 submit.addEventListener("click", formAlert);
-

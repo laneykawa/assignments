@@ -8,5 +8,6 @@
     margin: 0 auto;
     height: 300px;
     width: 300px;
-    background-color: gray;
+    background-color: beige;
+    display: flex;
 }

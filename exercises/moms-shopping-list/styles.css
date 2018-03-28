@@ -1,0 +1,36 @@
+h1 {
+    text-align: center; 
+    background: gray; 
+    padding: 20px; 
+    margin: 0 auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.div {
+    text-align: center;
+}
+
+input {
+    border: solid black 2px;
+    margin: 20px;
+    padding: 12px; 
+    width: 40%;
+    font-size: 15px; 
+
+}
+
+ul {
+    padding-right: 75px; 
+}
+
+li {
+    list-style-position: inside;
+    padding: 10px;
+    /* list-style-type: none; */
+
+}
+
+body {
+    text-align: center;
+}

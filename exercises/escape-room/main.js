@@ -10,8 +10,6 @@ console.log("You have selected " + playerMove)
 // with key now must select another option
 // if door, you cannot proceed unless you have a key
 
-
-
 var playEscapeRoom = function (playerMove){
     switch (playerMove){
         case "Hole":

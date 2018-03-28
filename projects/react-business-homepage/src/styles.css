@@ -1,0 +1,18 @@
+/* .flex {
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-around;
+    
+} */
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.group {
+    text-align: center;
+}

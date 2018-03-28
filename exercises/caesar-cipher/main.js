@@ -5,21 +5,37 @@ var alpha = "abcdefghijklmnopqrstuvwyz"
 // match letters to key
 // print results
 
+var input = ""
+console.log(input.toLowerCase)
+
 var caesarCipher = function (str, shift){
     for (var i = 0; i < str.length; i++){
-        var stringMatch =
-        }
+    var rightShift = 26-shift
+    //sting method to copy eeryt
     }
 }
+
+var alpha = "abcdefghijklmnopqrstuv"
+var caesarCipher = function (str, shift){
+    for (var i = 0; i < str.length; i++){
+    character = str[i];
+    var res = "";
+    str.charAt[i]+shift % 26 === res
+    str.charAt[]
+}
+
+if 
+
+
 
 // caesarCipher("abc", 1)
 
 // //how to make a key? 
 
-var key = function(shift){
-    for (var i = 0; i < alpha.length; i++){
-        console.log(alpha[i+shift])
-    }
-}
+// var key = function(shift){
+//     for (var i = 0; i < alpha.length; i++){
+//         console.log(alpha[i+shift])
+//     }
+// }
 
-key(5);
+// key(5);
