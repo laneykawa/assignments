@@ -1,0 +1,39 @@
+{
+    "superheroes": [
+        {   
+            "superheroName": "Spider Man", 
+            "info": "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man",
+            "realName": "Peter Benjamin Parker",
+            "powers": "Peter can cling to most surfaces, has superhuman strength (able to lift 10 tons optimally) and is roughly 15 times more agile than a regular human. The combination of his acrobatic leaps and web-slinging enables him to travel rapidly from place to place.", 
+            "groupAffiliations": "Avengers, New Fantastic Four, the Outlaws",
+            "imgUrl": "https://i.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg"
+        },
+
+        {   
+            "superheroName": "Iron Man", 
+            "info": "Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark instead created an advanced suit of armor to save his life and escape captivity.",
+            "realName": "Tony Stark",
+            "powers": "None; Tony's body had been enhanced by the modified techno-organic virus, Extremis, but it is currently inaccessible and inoperable.", 
+            "groupAffiliations": " The Avengers, Initiative, Hellfire Club (outer circle), S.H.I.E.L.D., Illuminati, Thunderbolts, Force Works, Queen's Vengeance, Alcoholics Anonymous",
+            "imgUrl": "https://i.annihil.us/u/prod/marvel/i/mg/c/60/55b6a28ef24fa.jpg"
+        },
+
+        {   
+            "superHeroName": "Captain America", 
+            "info": "Vowing to serve his country any way he could, young Steve Rogers took the super soldier serum to become America's one-man army.",
+            "realName": "Steve Rogers",
+            "powers": "Powers Captain America represented the pinnacle of human physical perfection. He experienced a time when he was augmented to superhuman levels, but generally performed just below superhuman levels for most of his career.", 
+            "groupAffiliations": "Secret Avengers; formerly the Avengers, Invaders, Captain's Unnamed Superhero Team, Redeemers; formerly partner of Winter Soldier, Bucky, Jones, Rick, Rick Jones, Falcon (Sam Wilson), Falcon, Demolition Man and Nomad (Jack Monroe)",
+            "imgUrl": "https://i.annihil.us/u/prod/marvel/i/mg/9/80/537ba5b368b7d.jpg"
+        },
+
+        {   
+            "superHeroName": "Wolverine", 
+            "info": "Born with super-human senses and the power to heal from almost any wound, Wolverine was captured by a secret Canadian organization and given an unbreakable skeleton and claws.",
+            "realName": "Peter Benjamin Parker",
+            "powers": "Wolverine is a mutant who possesses the ability to regenerate damaged or destroyed areas of his cellular structure at a rate far greater than that of an ordinary human. The speed at which this healing factor works varies in direct proportion with the severity of the damage Wolverine suffers.", 
+            "groupAffiliations": "Avengers, New Fantastic Four, the Outlaws", 
+            "imgUrl": "https://i.annihil.us/u/prod/marvel/i/mg/9/00/537bcb1133fd7.jpg"
+        }
+    ]
+}

@@ -37,9 +37,11 @@ var voters = [
 
 function totalVotes(arr) {
     return arr.reduce(function(person){
-        return person.voted
-    })
-}
+        if (person.voted === true){
+            return count++
+        }
+    }, 0);
+};
 
 console.log (totalVotes(voters))
 

@@ -50,6 +50,7 @@ a {
     padding: 12px;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px; 
 }
 
 a:hover {
@@ -102,12 +103,15 @@ p {
 
 h4 {
     padding: 20px; 
+    letter-spacing: 2px; 
 }
 .aboutsection {
     background: linear-gradient(to bottom right, #eeddd7, #f2c1b1, #eeddd7, #f2c1b1);
     /* background-color:#072124; */
     padding-bottom: 20px;
     align-items: center; 
+    /* letter-spacing: 2px;  */
+    letter-spacing: 1px; 
 }
 
 .about {
@@ -117,15 +121,23 @@ h4 {
     padding-top: 10px; 
     padding-left: 30px; 
     display: inline-block; 
+    font-family: 'Dosis', sans-serif;    
+    letter-spacing: 1px; 
+
+    
 }
 
 .abcontent{
     padding-top: 90px; 
+    font-family: 'Dosis', sans-serif;
 }
 
 h3{
     padding-bottom: 20px; 
     text-align: center;
+    font-family:'Nunito', sans-serif;
+    letter-spacing: 1px; 
+
 }
 
 .contactsection {
@@ -138,9 +150,10 @@ footer {
     /* background: linear-gradient(to bottom right, #eeddd7, #f2c1b1); */
     padding-left: 50px; 
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     margin: 0 auto;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 img {
@@ -177,7 +190,6 @@ form {
 
 
 .contact {
-    height: 300px; 
     width: 100%;
     padding: 50px;
     background-color: black;
@@ -197,4 +209,12 @@ iframe {
 
 .para {
     border: solid black 2px; 
+}
+
+.skinworks {
+    display: inline-block;
+    padding: 20px; 
+    padding-top: 5px;
+    width: 60%;
+    margin: 0 auto; 
 }

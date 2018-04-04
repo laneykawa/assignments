@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "SuperMario256";
+}
+
+@font-face {
+    font-family: "SuperMario256";
+    src: url("fonts/SuperMario256.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "SuperMario256";
+    background-color: #FED833; 
+    color: #E8232C; 
+    padding: 10px; 
+    font-size: 50px;
+    padding-left: 50px; 
+    padding-top: 25px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.middle {
+    background-color: #E8232C; 
+    text-align: center; 
+    padding: 20px;
+}
+
+.content {
+    color: #E8232C; 
+    text-align: center;
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    padding: 20px; 
+    padding-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #FED833;
+    text-align: right;
+}
+
+.mushroom {
+    width: 70px; 
+    padding: 5px; 
+}
+
+p {
+    padding: 10px; 
+    font-family: "SuperMario256";
+    font-weight: bolder;
+    font-size: 20px;
+}

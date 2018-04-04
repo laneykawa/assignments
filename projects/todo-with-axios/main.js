@@ -23,7 +23,7 @@ function createTodoInfo(todo, parent){
     parent.appendChild(createTodoProperty("h3", todo.title)); 
     parent.appendChild(createTodoProperty("p", todo.description)); 
     parent.appendChild(createTodoProperty("p", todo.price));
-    parent.appendChild(createTodoProperty("img", todo.imgUrl));
+    parent.appendChild(createTodoProperty("img", ""));
 }
 
 // checked off label function
@@ -52,7 +52,7 @@ function addToDom(todo){
     let input = document.createElement("input"); 
     input.type = "checkbox"; 
     input.classList.add("checkbox")
-    input.id = todo.id + "completed"; 
+    input.id = todo.id + "completed";
     input.checked = todo.completed;
     
     // create a lable to look for a status. 
@@ -68,10 +68,9 @@ function addToDom(todo){
             checkOff(li, checked);
 
     //img push
-    let imgUrl = document.getElementById("imgUrl");
-    imgUrl.id = "imgid"
-    img.src = todo.imgUrl
-
+    let img = document.createElement("IMG");
+    img.id = "imgid";
+    img.src = todo.imgUrl;
         }); 
     }); 
     const newDiv = document.createElement("div")
@@ -80,8 +79,8 @@ function addToDom(todo){
     newDiv.appendChild(label)
     newDiv.appendChild(button)
     createTodoInfo(todo, li);
+    li.appendChild(img);
     li.appendChild(newDiv);
-    // li.appendChild(imgUrl)
     todoList.appendChild(li);
 };
 
@@ -97,7 +96,7 @@ axios.get(todoUrl).then(function (response){
     let todos = response.data; 
     for (var i = 0 ; i < todos.length; i++){
     let todo = todos[i]; 
-    addToDom(todo); 
+    addToDom(todo);
     }
 })
 
@@ -108,7 +107,7 @@ todoForm.addEventListener("submit", function (e){
     inputData.title = e.target.title.value
     inputData.description = e.target.description.value;
     inputData.price = e.target.price.value; 
-    inputData.img = e.target.imgUrl.src; 
+    inputData.img = e.target.img.value; 
     axios.post (todoUrl, inputData).then(function (response){
         let todo = response.data; 
         addToDom (todo); 

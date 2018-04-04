@@ -26,12 +26,28 @@ getEven(4);
 // loop through 
 // add i++ etc
 // divide by total
-// print numbers
 
-var averageArray = function (arr){
-    for (var i = 0; i < arr.lenth; i++){
-        console.log(arr.reduce(function(arr.length, 0,))
-    }
-}
+const arr = [1, 2, 3]; 
 
-averageArray([1, 2, 3]);
+// var averageArray = function (arr){
+//     arr.reduce(function (total, amount){
+//         return total + amount; 
+//     }, 0);
+// };
+
+const aveArray = function(arr){
+    arr.reduce(function(a,b){
+        return a+b
+    },0);
+};
+console.log (aveArray(arr))
+
+const averageArray = arr.reduce(function (a, b){ return a+b }, 0);
+console.log(averageArray);
+
+
+
+
+// 5) Make a function that takes two arrays and returns a single array of the items from the arrays added alternatingly.
+
+
