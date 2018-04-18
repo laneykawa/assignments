@@ -19,7 +19,7 @@
         },
 
         {   
-            "superHeroName": "Captain America", 
+            "superheroName": "Captain America", 
             "info": "Vowing to serve his country any way he could, young Steve Rogers took the super soldier serum to become America's one-man army.",
             "realName": "Steve Rogers",
             "powers": "Powers Captain America represented the pinnacle of human physical perfection. He experienced a time when he was augmented to superhuman levels, but generally performed just below superhuman levels for most of his career.", 
@@ -28,12 +28,20 @@
         },
 
         {   
-            "superHeroName": "Wolverine", 
+            "superheroName": "Wolverine", 
             "info": "Born with super-human senses and the power to heal from almost any wound, Wolverine was captured by a secret Canadian organization and given an unbreakable skeleton and claws.",
             "realName": "Peter Benjamin Parker",
             "powers": "Wolverine is a mutant who possesses the ability to regenerate damaged or destroyed areas of his cellular structure at a rate far greater than that of an ordinary human. The speed at which this healing factor works varies in direct proportion with the severity of the damage Wolverine suffers.", 
             "groupAffiliations": "Avengers, New Fantastic Four, the Outlaws", 
             "imgUrl": "https://i.annihil.us/u/prod/marvel/i/mg/9/00/537bcb1133fd7.jpg"
+        },
+        {   
+            "superheroName": "Black Widow", 
+            "info": "Natasha Romanova, known by many aliases, is an expert spy, athlete, and assassin. Trained at a young age by the KGB's infamous Red Room Academy, the Black Widow was formerly an enemy to the Avengers.",
+            "realName": "Natasha Romanova",
+            "powers": "None", 
+            "groupAffiliations": "Avengers, New Fantastic Four, the Outlaws", 
+            "imgUrl": "https://i.annihil.us/u/prod/marvel/i/mg/3/40/537ba41563b66.jpg"
         }
     ]
 }

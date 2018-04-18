@@ -1,7 +1,7 @@
 Superhero Events
 ====================
 
-
+This assignment has a simple app that listens for a click to output the Superhero powers. 
 
 
 

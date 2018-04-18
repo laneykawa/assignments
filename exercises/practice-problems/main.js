@@ -27,7 +27,7 @@ getEven(4);
 // add i++ etc
 // divide by total
 
-const arr = [1, 2, 3]; 
+const arr = [1, 2, 3, 4, 5]; 
 
 // var averageArray = function (arr){
 //     arr.reduce(function (total, amount){
@@ -35,19 +35,18 @@ const arr = [1, 2, 3];
 //     }, 0);
 // };
 
-const aveArray = function(arr){
-    arr.reduce(function(a,b){
-        return a+b
-    },0);
-};
-console.log (aveArray(arr))
+const averageArray = (arr.reduce((total, amount) => total + amount)) / arr.length
 
-const averageArray = arr.reduce(function (a, b){ return a+b }, 0);
 console.log(averageArray);
-
-
-
 
 // 5) Make a function that takes two arrays and returns a single array of the items from the arrays added alternatingly.
 
+const combineArray = function (arr1, arr2){
+        var newArray = []; 
+        for (var i = 0 ; i < arr1.length; i++){
+            newArray.push(arr1[i], arr2[i])
+        }
+        return newArray
+    }
 
+console.log(combineArray(["a", "b", "c"],  [1, 2, 3]));

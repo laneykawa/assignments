@@ -72,7 +72,8 @@ header {
     color: white; 
     border-top: solid #0B4849 10px; 
     opacity: .99;
-    display: relative; 
+    display: flex; 
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 500p){
@@ -126,7 +127,6 @@ ul {
   display: relative; 
   bottom: 20px; 
   width: 100%; 
-
 }
 
 li {
@@ -142,10 +142,8 @@ li {
   font-family: 'Julius Sans One', 'Sans Serif';
   font-size: 1em; 
   text-decoration-line: none;
-  display: inline-block;
   background-color: white; 
   opacity: .20;
-  padding-top: 27px;
 }
 
 .linkref {

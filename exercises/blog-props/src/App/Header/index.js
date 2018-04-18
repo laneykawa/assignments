@@ -3,11 +3,13 @@ import Nav from "../Nav/"
 
 function Header (){
     return (
-        <header>
+        <div>
             <Nav />
-            <h1>Clean Blog</h1>
-            <h2>A Blog Theme by Start Bootstrap</h2>
-        </header>
+            <header className="header">
+                <h1>Clean Blog</h1>
+                <h2>A Blog Theme by Start Bootstrap</h2>
+            </header>
+        </div>
     )
 }
 

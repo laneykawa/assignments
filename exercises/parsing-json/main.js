@@ -1,13 +1,23 @@
-// var request = require('request');
+const parsePokemon = function(){
+    var xhr = new XMLHttpRequest();
 
-// request('http://pokeapi.co/api/v1/pokemon/25/', function (error, response, body) {  
-//     if (!error && response.statusCode === 200) {
-//         var data = JSON.parse(body);
-//         console.log("Pokemon Name: " + data.name);
-//         console.log("Speed: " + data.speed);
-//         console.log("Weight: " + data.weight);
-//         console.log("Favorite Move: " + data.moves[2].name);
-//     }
-// });
+    xhr.onreadystatechange = function () {  
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var jsonData = xhr.responseText;
+            var data = JSON.parse(jsonData);
+            var pokemon = data.objects[0].pokemon
+            console.log(pokemon)
 
-const parsePokemon = 
+            var list = document.getElementById("list")
+    
+            pokemon.map(function(singlePoke){
+                list.innerHTML += `<li> <h1> Name: ${singlePoke.name}</h1> Url: ${singlePoke.resource_uri} </li>`
+            })
+        }
+    };
+
+    xhr.open("GET", "http://api.vschool.io:6543/pokemon.json", true);  
+    xhr.send();
+}
+
+parsePokemon();

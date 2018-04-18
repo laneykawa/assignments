@@ -1,4 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 header {
     background-image: url("https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg");
-    width: 100%; 
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    padding: 8em; 
 }
+
+.topNav {
+    color: white;
+    position: fixed;
+    display: flex; 
+    justify-content: space-around;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px; 
+
+}
+
+h1 {
+    display: flex; 
+    justify-content: center; 
+    text-align: center;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bolder; 
+    font-size: 50px; 
+}
+
+h2 {
+    text-align: center;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+h3 {
+   width: 250px; 
+   margin-top: 20px; 
+   margin-left: 4em;
+   margin-right: 10em; 
+}
+
+h4 {
+    display: block; 
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px; 
+    margin-top: 20px;
+    margin: 10px;  
+    font-size: 12px; 
+    font-weight: bold; 
+    width: 100px; 
+    justify-content: space-around; 
+    text-align: center;
+}
+
