@@ -60,14 +60,14 @@
 
 header {
     background-image: url("http://www.csszengarden.com/214/contours.png"), url("http://www.csszengarden.com/214/noise.png"), url("http://www.csszengarden.com/214/gridlines.png"), url("http://www.csszengarden.com/214/huntington.jpg");
-    padding: 20px 0 70px 0; 
+    padding: 0 0 0 0; 
     background-attachment: fixed, fixed, fixed, scroll;
     background-position: 0 0, 0 0, -5px -25px;
     background-repeat: repeat, repeat, repeat, no-repeat;
     background-size: auto, auto, auto, cover;
     text-align: center; 
     width: 100%;
-    height: 250px; 
+    /* height: 250px;  */
     margin: 0 auto; 
     color: white; 
     border-top: solid #0B4849 10px; 
@@ -76,10 +76,13 @@ header {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 500p){
-  header {
-    height: 250px; 
+@media (max-width: 500px){
+  .heading{
+    display: inline-block; 
   }
+  .headings::before{
+    display: inline-block; 
+  }  
 }
 
 
@@ -87,6 +90,10 @@ h1 {
   font-family: 'Julius Sans One', 'Sans Serif';
   margin-top: 35px; 
   font-size: 1.8em;
+}
+
+.headings {
+  padding-top: 15px;
 }
 
 .headings::before{
@@ -111,60 +118,68 @@ h2 {
   padding-bottom: 30px; 
   border-top: none; 
   color: rgba(255,255,255,0.6);
-  font-size: 1.1em; 
-  /* color: white;  */
+  font-size: 1.1em;
 }
 
 .firstList {
-  padding-bottom: 20px; 
-}
-
-ul {
   font-family: 'Libre Baskerville';
   list-style-type: none;
   margin: 0; 
-  padding: 0;
-  display: relative; 
-  bottom: 20px; 
-  width: 100%; 
-}
-
-li {
-  font-family: 'Libre Baskerville', 'Sans Serif';
-  font-style: normal;
-  display: inline-block;
+  padding: 0; 
+  display: flex; 
+  flex-direction: row; 
+  opacity: .20;
 }
 
 .viewall {
   width: 100%;
-  min-height: 70px; 
-  padding: 0 71px; 
   font-family: 'Julius Sans One', 'Sans Serif';
   font-size: 1em; 
   text-decoration-line: none;
-  background-color: white; 
-  opacity: .20;
+  color: white; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 10;
 }
 
 .linkref {
-  transition: all 0.25s ease-out
-  
+  transition: all 0.25s ease-out;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center;
+  font-style: normal;   
+  z-index: 1000; 
+  /* color: white; */
+ 
 }
 
-.linkref:hover {
-  min-height: 70px; 
-  transition: all 0.25s ease-out
+.viewall:hover {
+  transition: all 0.25s ease-out; 
+  color: white;
+  background-color: white;  
 }
 
 .next {
   font-family: "verdemoderna"; 
   font-size: 40px;
   -webkit-font-smoothing: antialiased;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  height: 70px;
+  width: 80px; 
+  border-top: none; 
+  /* color: white;  */
+  /* opacity: .2 */
 }
 
 .next:hover {
-  background-color: white; 
-  opacity: .20;
+  background-color: gray; 
+  color: white; 
+  /* opacity: .20; */
 }
 
 .intro {
@@ -218,8 +233,7 @@ p {
 
 .dave {
   background-image: url("http://www.csszengarden.com/214/contours.png"), url("http://www.csszengarden.com/214/noise.png"), url("http://www.csszengarden.com/214/gridlines.png"), url("http://www.csszengarden.com/214/huntington.jpg");
-  height: 220px; 
-  padding: 20px 0 70px 0; 
+  padding: 1em;
   background-attachment: fixed, fixed, fixed, scroll;
   background-position: 0 0, 0 0, -5px -25px;
   background-repeat: repeat, repeat, repeat, no-repeat;
@@ -228,7 +242,10 @@ p {
   width: 100%; 
   margin: 0 auto; 
   color: white; 
-  opacity: .95;
+  font-size: 1.4em; 
+  line-height: 2; 
+  filter: brightness(90%);
+  opacity: .8; 
 }
 
 .icons {
@@ -236,17 +253,140 @@ p {
   font-family: "Verdemoderna";
   color: white; 
   font-size: 35px; 
-  text-align: center;
-  padding: 28px 10%; 
+  padding: 1em 10%; 
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 5px; 
+  cursor: pointer;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
 }
+
+.five {
+  padding-left: 5px; 
+  padding-right: 5px; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-content: stretch;
+  opacity: .6; 
+}
+
+.five:hover {
+
+}
+
+.three {
+  padding-left: 5px; 
+  padding-right: 5px; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-content: stretch;
+  opacity: .6; 
+}
+
+.ccc {
+  padding-left: 5px; 
+  padding-right: 5px; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-content: stretch;
+  opacity: .6;
+}
+
+.aaa {
+  padding-left: 5px; 
+  padding-right: 5px;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-content: stretch;
+  opacity: .6;  
+}
+
+.ggg {
+  padding-left: 5px; 
+  padding-right: 5px;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-content: stretch;
+  opacity: .6; 
+}
+
 
 .design-name {
   font-family: 'Julius Sans One', 'Sans Serif';
-  ;
+  font-style: normal;
+  color: #1a5952;
+  cursor: pointer;
+  font-size: 1.1em;
 }
 
 .designer-name {
   font-family: 'Libre Baskerville', 'Sans Serif';
+  font-style: normal;
+  color: #1a5952; 
+  font-size: .8em; 
+  cursor: pointer;
+}
+
+.white {
+  position: relative; 
+  color: white; 
+  z-index: 1000
+}
+
+.white:hover {
+  text-decoration: underline;
+  color: white; 
+}
+
+ul {
+ display: grid; 
+ grid-template-columns: 1fr 1fr;
+ background-color: #ecf4f0; 
+ list-style-type: none;
+padding: 0; 
+}
+
+li {
+  font-style: italic;
+  padding: 1em 5%;
+  border-top: solid 1px #d9e3dc;
+  text-decoration: none;
+}
+
+.ref {
+  background-color: #ecf4f0;
+}
+
+.ref:hover {
+  background-color: white;
+}
+
+.interlinks {
+  font-family: 'Julius Sans One', 'Sans Serif';
+  font-style: normal;
+  border-top: solid 1px #a0b9ad;
+}
+
+.footerLinks {
+  background-image: url("http://www.csszengarden.com/214/bamboo.png"); 
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(138,188,159,0.5);
+  background-image: url("http://www.csszengarden.com/214/contours-opaque.png"), url("http://www.csszengarden.com/214/gridlines-opaque.png"), url("http://www.csszengarden.com/214/bamboo.png");
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+  color: #1a5952; 
+  font-size: 1.1em; 
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none; 
 }
