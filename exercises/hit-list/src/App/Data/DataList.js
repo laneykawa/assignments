@@ -7,7 +7,7 @@ function DataList(props) {
     const peopleComponents = people.map((person, i) => <Person key={person.name + i} {...person} />);
     return (
         <ul>
-            { peopleComponents }; 
+            { peopleComponents }
         </ul>
     )
 }

@@ -7,7 +7,7 @@ function App (){
     return (
         <div>
             <Header></Header>
-            <Data></Data>
+            <Data className="data"></Data>
             <Footer></Footer>
        </div>
     )

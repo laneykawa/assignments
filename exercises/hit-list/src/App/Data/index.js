@@ -5,7 +5,7 @@ import axios from "axios";
 
 const hitListUrl = "http://api.vschool.io:6543/hitlist.json";
 
-class DataContainer extends Component {
+class Data extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,11 +16,10 @@ class DataContainer extends Component {
     }
 
     componentDidMount() {
-        axios.get(hitListUrl + "people")
+        axios.get(hitListUrl)
             .then(response => {
-                const { results } = response.data;
-                this.setState({
-                    people: results,
+                this.setState({ 
+                    people: response.data,
                     loading: false
                 })
             })
@@ -46,4 +45,4 @@ class DataContainer extends Component {
         }
     }
 }
-export default DataContainer;
+export default Data;
