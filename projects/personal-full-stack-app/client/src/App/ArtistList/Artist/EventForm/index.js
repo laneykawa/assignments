@@ -34,7 +34,7 @@ class EventForm extends Component {
     handleSubmit(event) {
         event.persist();
         event.preventDefault();
-        this.props.addEvent(this.state.inputs)
+        this.props.addEvent({...this.state.inputs, artistId: this.props.artistId})
         this.setState(this.initialState);
         this.props.toggleDisplayEvent();
     }

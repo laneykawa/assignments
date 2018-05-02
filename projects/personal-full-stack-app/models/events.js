@@ -7,10 +7,10 @@ const eventSchema = new Schema({
     description: String,
     location: String, 
     date: Date,
-    artistId: {
+    artistId: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "artists"
-    }
+        ref: "Artist"
+    }]
 })
 
 const EventModel = mongoose.model("Event", eventSchema);

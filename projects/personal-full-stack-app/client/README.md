@@ -1,3 +1,75 @@
+Personal Full Stack App Project | MSG Project
+========================================
+The purpose of this application is to manage artists and their booked dates. 
+The goal was to make managing artists easier and also help artists provide their show riders after bookings. 
+
+There are three primary "Users" 
+1. Admin/Marketing Team 
+2. Artists
+3. General Public
+
+Each User will have the following functionalities below: 
+
+Admin/Marketing Team (AU)
+- Admin User (AU) can read list from servers, add, edit and delete artists. 
+- AU can read, add, edit and delete contacts. 
+- AU can read, add, edit and delete events. 
+
+Artist Users (ArU)
+- ArU can edit their profile
+- ArU can read, add, edit and delete events. 
+
+General Publid Users (GU)
+- GU can view artists
+- GU can add events
+- GU can send contact information
+
+The main components are all stored in the App.js folder. Artist List is houses the editForm where you edit artists, EventForm, EventList, and Artist Component. To add a new artist this was stored in Artist Form.
+
+-------------
+The Schema is organized as follows: 
+
+ARTIST MODEL: 
+    name: String,
+    img: String, 
+    bookingCost: Number,
+    bio: String,
+    eventIds: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Event"
+    }],
+    genreId: {
+        type: mongoose.Schema.Types.ObjectId,
+        // required: true,
+        ref: "genres"
+    }
+
+
+CONTACT MODEL: 
+    name: String,
+    email: String, 
+    inquiry: String
+
+
+EVENT MODEL:
+  name: String,
+    description: String,
+    location: String, 
+    date: Date,
+    artistId: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Artist"
+    }]
+
+
+GENRE MODEL: 
+  name: String
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

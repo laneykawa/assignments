@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { getArtists, removeArtist } from "../../redux/artists"; 
 
 import Artist from "./Artist/";
-import Nav from "../Nav";
+// import Nav from "../Nav";
 
 
 class ArtistList extends Component {
@@ -28,7 +28,7 @@ class ArtistList extends Component {
         } else {
             return (
                 <div className="artist">
-                    <Nav></Nav>
+                    {/* <Nav></Nav> */}
                     {artistComponents}
                 </div>
             )

@@ -16,7 +16,7 @@ class Event extends Component {
         const { name, _id, description, date, location, removeEvent } = this.props;
         return (
             <div className="eventSection" >
-                <h4>Upcoming Event Infomation</h4>
+                <h4>Event Infomation</h4>
                 <p>Event Name: {name}</p>
                 <p>Date: {date}</p>
                 <p>Description: {description}</p>

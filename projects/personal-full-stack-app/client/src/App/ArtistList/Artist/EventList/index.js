@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import { connect } from "react-redux";
-import { getEvents, removeEvent } from "../../../../redux/events"; 
+import { getEvents, removeEvent } from "../../../../redux/events";
 
 import Event from "./Event";
 
@@ -22,7 +22,8 @@ class EventList extends Component {
             )
         } else {
             const eventComponents = data
-            .map((event, i) => <Event key={event._id} getEvents={getEvents} data={data} removeEvent={removeEvent}{...event}></Event>)
+                .filter(event => event.artistId.includes(this.props.artistId))
+                .map((event, i) => <Event key={event._id} getEvents={getEvents} data={data} removeEvent={removeEvent}{...event}></Event>)
             return (
                 <div className="event">
                     {eventComponents}

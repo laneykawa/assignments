@@ -1,26 +1,23 @@
-const express = require("express"); 
-const eventRouter = express.Router(); 
+const express = require("express");
+const eventRouter = express.Router();
 
-const EventModel = require("../models/events.js"); 
-const ArtistModel = require("../models/artists.js"); 
+const EventModel = require("../models/events.js");
+const ArtistModel = require("../models/artists.js");
 
 eventRouter.route("/")
-    .get((req, res)=> {
+    .get((req, res) => {
         EventModel.find(req.query)
             .populate("genreId")
             .exec((err, foundEvents) => {
-                if (err) return res.send(err); 
+                if (err) return res.send(err);
                 res.status(200).send(foundEvents)
             });
     })
     .post((req, res) => {
-        const newEvent = new EventModel(req.body); 
+        const newEvent = new EventModel(req.body);
         newEvent.save((err, savedEvent) => {
-            if (err) return res.send(err); 
-            EventModel.populate(savedEvent, { path: "genreId "}, (err, popEvent) => {
-                if(err) return res.send(err); 
-                res.status(201).send(popEvent)
-            });
+            if (err) return res.send(err);
+            res.status(201).send(savedEvent)
         });
     });
 
@@ -29,17 +26,17 @@ eventRouter.route("/:id")
         EventModel.findOne({ _id: req.params.id })
             .populate("artistId")
             .exec((err, foundEvent) => {
-                if (err) return res.send(err); 
-                if(!foundEvent) return res.status(404).send({ message: "Event Not Found" })
+                if (err) return res.send(err);
+                if (!foundEvent) return res.status(404).send({ message: "Event Not Found" })
                 res.status(200).send(foundEvent)
             })
     })
 
     .delete((req, res) => {
         EventModel.findOneAndRemove({ _id: req.params.id }, (err, deletedEvent) => {
-            if(err) return res.send(err); 
-            if(!deletedEvent) return res.status(404).send({ message: "Event Not Found"})
-            res.status(204).send(); 
+            if (err) return res.send(err);
+            if (!deletedEvent) return res.status(404).send({ message: "Event Not Found" })
+            res.status(204).send();
         })
     })
 

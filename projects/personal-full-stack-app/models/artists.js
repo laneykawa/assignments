@@ -9,7 +9,7 @@ const artistSchema = new Schema({
     bio: String,
     eventIds: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "events"
+        ref: "Event"
     }],
     genreId: {
         type: mongoose.Schema.Types.ObjectId,

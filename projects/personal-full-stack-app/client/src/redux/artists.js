@@ -139,7 +139,6 @@ export const editArtist = (id, newArtist) => {
     return dispatch => {
         axios.put("/artists/" + id, newArtist)
             .then(response => {
-
                 dispatch({
                     type: "EDIT_ARTIST",
                     artist: response.data,

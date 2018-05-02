@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addContact } from "../redux/contacts";
 
-import Nav from "./Nav"; 
-
 class Contact extends Component {
     constructor (props){
         super(props); 
@@ -40,16 +38,13 @@ class Contact extends Component {
     render (){
         return (
         <div className="contact">
-            <Nav className="nav" />
-            <div className="center">
-                <form className="contactForm" onSubmit={this.handleSubmit}>
-                    <input className="contactInput" name="name" value={this.state.inputs.name} onChange={this.handleChange} placeholder="Name" type="text"/>
-                    <input className="contactInput" name="email" value={this.state.inputs.email} onChange={this.handleChange} placeholder="email" type="email"/>
-                    <input className="contactInput" name="inquiry" value={this.state.inputs.inquiry} onChange={this.handleChange} placeholder="inquiry" type="text"/>
-                    <br/>
-                    <button className="addButton">Submit</button>
-                </form>
-            </div>
+            <form className="contactForm" onSubmit={this.handleSubmit}>
+                <input className="contactInput" name="name" value={this.state.inputs.name} onChange={this.handleChange} placeholder="Name" type="text"/>
+                <input className="contactInput" name="email" value={this.state.inputs.email} onChange={this.handleChange} placeholder="email" type="email"/>
+                <input className="contactInput" name="inquiry" value={this.state.inputs.inquiry} onChange={this.handleChange} placeholder="inquiry" type="text"/>
+                <br/>
+                <button className="addButton">Submit</button>
+            </form>
         </div>
         )
     }

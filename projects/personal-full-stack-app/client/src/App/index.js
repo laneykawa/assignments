@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Footer from "./Footer";
+import Nav from "./Nav"; 
 
 // Routes
 import Home from "./Home";
@@ -16,6 +17,9 @@ function App(props) {
     return (
         <div className="app-wrapper">
             <Header />
+            <div className="flex">
+                <Nav className="nav"/>
+            </div>
             <div className="content-wrapper">
                 <Switch>
                     <Route exact path="/" component={Home}></Route>

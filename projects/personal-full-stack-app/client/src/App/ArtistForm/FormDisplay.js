@@ -1,13 +1,10 @@
 import React from "react"; 
 
-import Nav from "../Nav.js"; 
-
 function FormDisplay(props) {
     const { handleChange, handleSubmit, inputs } = props; 
     const { name, img, bookingCost, bio } = inputs; 
     return (
         <div className="display" >
-            <Nav className="nav" ></Nav>
             <div className="formDisplay">
             <form className="addForm"onSubmit={handleSubmit}>
                 <input className="addInput" name="name" onChange={handleChange} value={name} type="text" placeholder="Enter Artist Name"/>

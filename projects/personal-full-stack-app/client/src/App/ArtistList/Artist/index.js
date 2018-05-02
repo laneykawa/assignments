@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import EditForm from "./EditForm/";
 import EventForm from "./EventForm";
 import EventList from "./EventList";
@@ -19,7 +20,6 @@ class ArtistDisplay extends Component {
     toggleDisplayEvent = () => {
         this.setState(prevState => ({ displayFormEvent: !prevState.displayFormEvent }));
     }
-
     render() {
         const { name, _id, img, bookingCost, bio, removeArtist } = this.props;
         return (
@@ -35,11 +35,11 @@ class ArtistDisplay extends Component {
                 {
                     this.state.displayForm ? <EditForm toggleDisplay={this.toggleDisplay} {...this.props} /> : null
                 }
-                <button className="button" onClick={this.toggleDisplayEvent}>Add Event</button>
+                <button className="addEventButton" onClick={this.toggleDisplayEvent}>Add Event</button>
                 {
-                    this.state.displayFormEvent ? <EventForm toggleDisplayEvent={this.toggleDisplayEvent}{...this.props} /> : null
+                    this.state.displayFormEvent ? <EventForm artistId={_id}toggleDisplayEvent={this.toggleDisplayEvent}{...this.props} /> : null
                 }
-                <EventList></EventList>
+                <EventList artistId={_id}></EventList>
             </div>
         )
     }
