@@ -3,7 +3,9 @@ import React from "react";
 function Header () {
     return (
         <div>
-            <header></header>
+            <h1>Hello! This is Rock the Vote</h1>
         </div>
-    )
-}
+    );
+};
+
+export default Header; 

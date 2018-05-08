@@ -4,15 +4,16 @@ const { Schema } = mongoose;
 
 const issueSchema = new Schema({
     title: String,
-    description: String, 
+    description: String,
+    img: String,  
     totalVotes: Number,
     voteCount: Number,
-    commentId: {
+    commentIds: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "comments"
-    }
+    }]
 })
 
-const IssueModel = mongoose.model("Issue", issueSchema);
+const IssueModel = mongoose.model("issues", issueSchema);
 
 module.exports = IssueModel;
