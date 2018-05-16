@@ -10,9 +10,7 @@ class AddIssueForm extends Component {
         this.initialState = {
             inputs: {
                 title: "",
-                description: "",
-                totalVotes: "",
-                voteCount: ""
+                description: ""
             },
         }
         this.state = this.initialState;

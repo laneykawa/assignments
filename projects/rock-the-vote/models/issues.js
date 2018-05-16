@@ -6,8 +6,14 @@ const issueSchema = new Schema({
     title: String,
     description: String,
     img: String,  
-    totalVotes: Number,
-    voteCount: Number,
+    totalVotes: {
+        type: Number, 
+        default: 0
+        },
+    voteCount: {
+        type: Number, 
+        default: 0
+        },
     commentIds: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "comments"

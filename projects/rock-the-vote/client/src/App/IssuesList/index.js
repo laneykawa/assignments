@@ -1,19 +1,18 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getIssues, removeIssue, addIssue } from "../../redux/issues"; 
+import { getIssues, removeIssue, addIssue, editIssue } from "../../redux/issues"; 
 
 import Issue from "./Issue/";
 
 class IssuesList extends Component {   
     componentDidMount() {
         this.props.getIssues(this.props);
-        console.log("props", this.props)
     }
 
     render() {
         const { data, loading, errMsg, removeIssue, addIssue, editIssue } = this.props;
         const issueComponents = data
-            // .sort((a,b) => a.name.localeCompare(b.name))
+            .sort((a,b) => b.voteCount - a.voteCount)
             .map((issue, i) => <Issue key={issue._id} editIssue={editIssue} removeIssue={removeIssue}{...issue}></Issue>)
 
         if (loading) {
@@ -26,8 +25,7 @@ class IssuesList extends Component {
             )
         } else {
             return (
-                <div className="artist">
-                    Ok, so my list is showing up... but my component won't show...
+                <div className="issues">
                     {issueComponents}
                 </div>
             )
@@ -39,4 +37,4 @@ const mapStateToProps = state => {
     return state.issues;
 }
 
-export default connect(mapStateToProps, { getIssues, removeIssue, addIssue })(IssuesList);
+export default connect(mapStateToProps, { getIssues, removeIssue, addIssue, editIssue })(IssuesList);

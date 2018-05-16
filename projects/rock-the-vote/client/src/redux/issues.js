@@ -63,6 +63,7 @@ export const getIssues = () => {
     return dispatch => {
         axios.get("/issues")
             .then(response => {
+                console.log(response.data);
                 dispatch({
                     type: "GET_ISSUES",
                     issues: response.data
@@ -96,7 +97,6 @@ export const getIssue = (id) => {
 }
 
 export const addIssue = (newIssue) => {
-    console.log(newIssue)
     return dispatch => {
         axios.post("/issues/", newIssue)
             .then(response => {
@@ -136,6 +136,7 @@ export const editIssue = (id, newIssue) => {
     return dispatch => {
         axios.put("/issues/" + id, newIssue)
             .then(response => {
+                console.log(newIssue);
                 dispatch({
                     type: "EDIT_ISSUE",
                     issue: response.data,
