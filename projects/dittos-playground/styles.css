@@ -76,15 +76,11 @@ header {
     flex-direction: column;
 }
 
-@media (max-width: 500px){
-  .heading{
-    display: inline-block; 
-  }
-  .headings::before{
-    display: inline-block; 
-  }  
+img {
+  width: 50px; 
+  height: 50px; 
+  display: none;
 }
-
 
 h1 {
   font-family: 'Julius Sans One', 'Sans Serif';
@@ -121,17 +117,58 @@ h2 {
   font-size: 1.1em;
 }
 
-.firstList {
-  font-family: 'Libre Baskerville';
-  list-style-type: none;
+.view-all {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  /* padding: 15px;  */
+  font-family: "Julius Sans One";
+  color: white;
+  background-color: rgba(194, 202, 182, 0.294);
+  border-top: none; 
+  font-style: normal; 
+  height: 70px; 
+}
+
+.view-all a{
+  color: white; 
+}
+
+.view-all a:hover{
+  background-color: rgba(255,255,255,0.25);
+}
+
+.arrow {
+  font-family: 'verdemoderna';
+  -webkit-font-smoothing: antialiased;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 50px; 
+  height: 50px; 
+  width: 50px; 
+  margin: 0; 
+}
+
+.arrow:hover {
+  background-color: white; 
+  opacity: .7; 
+}
+
+.viewList {
+  /* font-family: 'Libre Baskerville'; */
+  font-style: normal;
+  font-family: "Julius Sans One";
   margin: 0; 
   padding: 0; 
   display: flex; 
   flex-direction: row; 
-  opacity: .20;
+  justify-content: center; 
+  border-top: none;
 }
 
-.viewall {
+/* .viewall {
   width: 100%;
   font-family: 'Julius Sans One', 'Sans Serif';
   font-size: 1em; 
@@ -142,8 +179,11 @@ h2 {
   align-items: center; 
   justify-content: center; 
   z-index: 10;
-}
+} */
 
+.hidden {
+  display: none; 
+}
 .linkref {
   transition: all 0.25s ease-out;
   display: flex; 
@@ -258,8 +298,11 @@ p {
   cursor: pointer;
   display: flex; 
   flex-direction: row; 
-  justify-content: center; 
+  justify-content: space-between;
+  padding-left: 100px; 
+  padding-right: 100px;  
 }
+
 
 .five {
   padding-left: 5px; 
@@ -271,9 +314,6 @@ p {
   opacity: .6; 
 }
 
-.five:hover {
-
-}
 
 .three {
   padding-left: 5px; 
@@ -315,20 +355,33 @@ p {
   opacity: .6; 
 }
 
+/* .icons{
+  display: flex;
+  justify-content: space-between;
+  font-size: 50px;
+  padding: 50px; 
+  padding-left: 200px; 
+  padding-right: 200px; 
+  
+}
+.icon {
+display: flex;
+justify-content: space-between;
+} */
 
 .design-name {
   font-family: 'Julius Sans One', 'Sans Serif';
   font-style: normal;
   color: #1a5952;
   cursor: pointer;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .designer-name {
   font-family: 'Libre Baskerville', 'Sans Serif';
   font-style: normal;
   color: #1a5952; 
-  font-size: .8em; 
+  font-size: .7em; 
   cursor: pointer;
 }
 
@@ -353,9 +406,11 @@ padding: 0;
 
 li {
   font-style: italic;
-  padding: 1em 5%;
+  padding: 20px; 
   border-top: solid 1px #d9e3dc;
   text-decoration: none;
+  padding-top: 15px;
+  padding-right: 20px; 
 }
 
 .ref {
@@ -370,6 +425,9 @@ li {
   font-family: 'Julius Sans One', 'Sans Serif';
   font-style: normal;
   border-top: solid 1px #a0b9ad;
+  padding: 30px; 
+  padding-top: 15px;
+  padding-right: 15px; 
 }
 
 .footerLinks {
@@ -380,7 +438,7 @@ li {
   background-repeat: repeat, repeat, no-repeat;
   background-size: auto, auto, cover;
   color: #1a5952; 
-  font-size: 1.1em; 
+  font-size: 1em; 
 }
 
 a {
@@ -389,4 +447,206 @@ a {
 
 a:hover {
   text-decoration: none; 
+}
+
+@media only screen and (min-width: 500px) {
+  .headings::before{
+    display: none;
+  } 
+  h1 {
+    font-size: 40px; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0px; 
+  }
+  h2 {
+    vertical-align: top;
+    padding-left: 110px;
+  }
+  .headingstuff{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center; 
+  }
+  img {
+    display: inline-block;
+    width: 80px; 
+    height: 80px; 
+    text-align: bottom;
+  }
+  .cssSpace {
+    margin: 40px; 
+  }
+  .dave {
+    padding: 55px; 
+  }
+  .ref {
+    padding-left: 100px; 
+  }
+  .interlinks{
+    padding-left: 100px; 
+  }
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 45px;
+    padding: 50px; 
+    padding-left: 200px; 
+    padding-right: 200px;     
+}
+  .icon {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1042px) {
+  img {
+    height: 140px;
+    width: 140px; 
+  }
+
+  h1{
+    font-size: 50px; 
+  }
+
+  h2 {
+    font-size: 25px; 
+  }
+
+  .siteWrapper {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 100%;
+  }
+
+  .boxA{
+    width: 66.6%;
+    order: 1;
+    /* height: 800px;  */
+  }
+
+  .boxB{
+      width: 66.6%;
+      order: 3;
+      margin-top: 0;
+  }
+
+  .boxC{
+    width: 66.6%;
+    order: 5;
+  }
+
+  footer{
+      width: 100%;
+      order: 7;
+      padding: 3em, 10%;
+  }
+
+  .icons{
+      display: flex;
+      justify-content: space-between;
+      font-size: 55px;
+      padding: 50px; 
+      padding-left: 200px; 
+      padding-right: 200px;    
+  }
+
+  .icon {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .references{
+      width: 33.3%;
+      order: 2;
+      justify-content: space-between;
+  }
+
+  .otherRefs{
+      width: 33.3%;
+      order: 4;
+  }
+
+  ul {
+    display: flex; 
+    flex-direction: column;
+  }
+
+  /* li{
+    display: flex;
+    flex-direction: row;
+  } */
+
+  .design-name {
+    font-size: 20px; 
+  }
+
+  .designer-name {
+    display: inline-block;
+    font-size: 15px; 
+  }
+
+  .ref {
+    display: inline-block;
+    padding-left: 50px; 
+    padding: 50px;
+  }
+
+  .dave{
+    font-size: 30px; 
+    letter-spacing: 1px; 
+    padding: 100px; 
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+  }
+
+  p{
+    font-size: 16px; 
+  }
+
+  h4 {
+    font-size: 30px; 
+  }
+
+  .hidden {
+    display: flex;
+    flex-direction: row; 
+    font-size: 20px;
+  }
+
+  .font1 {
+    font-family: 'Libre Baskerville', 'Sans Serif';
+    font-size: 17px;
+    color: black; 
+  }
+
+  .font2{
+    font-family: 'Julius Sans One', 'Sans Serif';
+  }
+
+  .interlinks {
+    padding: 70px; 
+    padding-left: 50px; 
+    font-size: 20px; 
+  }
+
+  .headingstuff {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+    padding-right: 30px; 
+    /* width: 66.66%; */
+  }
+
+  .view-all {
+    display: flex;
+    margin-left: 120px; 
+    /* float: right;  */
+    order: 2; 
+    width: 33.3%;
+  }
 }

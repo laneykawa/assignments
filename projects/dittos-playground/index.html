@@ -8,13 +8,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- <img src="http://www.csszengarden.com/214/enso.svg" alt="Enso"> -->
+    <div class="head-wrapper">
+    <header> 
         <div class="headings">
-            <h1>CSS Zen Garden</h1>
-            <h2>The Beauty of CSS Design</h2>
-        <nav>
-            <ul class="firstList">
+            <div class="headingstuff">
+                <div>
+                    <h1>
+                        <img src="http://www.csszengarden.com/214/enso.svg" alt="Enso">
+                        &nbsp
+                        CSS Zen Garden
+                    </h1>
+                    <h2>The Beauty of CSS Design</h2>
+                </div>
+       
+                <ul class="view-all">
+                        <li class="viewList">
+                            <!-- <a href="" class="arrow">&lt;</a> -->
+                        </li> 
+                        <li class="viewList" class="view-all-designs">
+                            <a href="http://www.mezzoblue.com/zengarden/alldesigns/">View all designs</a>
+                        </li>
+                        <li class="viewList">
+                            <a href="" class="arrow">&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            <!-- <ul class="firstList">
                 <li class="next" ></li>
                 <li class="viewall">
                     <a href="http://www.mezzoblue.com/zengarden/alldesigns/" class="linkref" title="View every submission to the Zen Garden.">View All Designs</a>>
@@ -22,13 +41,21 @@
                 <li class="next">>
                     <img src="" alt="">
                 </li>
-            </ul>
-        </nav>
+            </ul> -->
+      
+        </div>
         </div>
     </header>
+    <div class="siteWrapper">
     <section class="boxA">
         <div class="content">
             <p class="intro">A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.</p>
+            <div class="hidden">
+                <div class="font1">Download the example</div>
+                <a class="font2"href="http://www.csszengarden.com/examples/index"> &nbsp HTML File</a>
+                <div class="font1">&nbsp and</div>
+                <a class="font2" href="http://www.csszengarden.com/examples/style.css"> &nbsp CSS File</a>
+            </div>
             <h4>THE ROAD TO ENLIGHTENMENT</h4>
             <p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.</p>
             <p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WASP</abbr>, and the major browser creators. </p>
@@ -49,7 +76,7 @@
             <p>Why participate? For recognition, inspiration, and a resource we can all refer to showing people how amazing <abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal parts inspiration for those working on the web today, learning tool for those who will be tomorrow, and gallery of future techniques we can all look forward to.</p>
         </div>
     </section>
-    <section class"boxC">
+    <section class="boxC">
         <div class="content">
             <h4>REQUIREMENTS</h4>
             <p>Where possible, we would like to see mostly <abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 & 2</abbr> usage. <abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 & 4</abbr> should be limited to widely-supported elements only, or strong fallbacks should be provided. The <abbr title="Cascading Style Sheets">CSS</abbr> Zen Garden is about functional, practical <abbr title="Cascading Style Sheets">CSS</abbr> and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your <abbr title="Cascading Style Sheets">CSS</abbr> validates.</p>
@@ -62,12 +89,13 @@
         <h2 class="dave">By <a href="http://www.mezzoblue.com/" class="white">Dave Shea</a>. Bandwidth graciously donated by <a href="https://mediatemple.net/" class="white">mediatemple</a>. Now available: <a href="https://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/" class="white">Zen Garden, the book.</a></h2>
         </div>  
         <div class="icons">
-            <div class="five">5</div>
-            <div class="three">3</div>
-            <div class="ccc">c</div>
-            <div class="aaa">a</div>
-            <div class="ggg">g</div>
+            <div class="icon" class="five">5</div>
+            <div class="icon" class="three">3</div>
+            <div class="icon" class="ccc">c</div>
+            <div class="icon" class="aaa">a</div>
+            <div class="icon" class="ggg">g</div>
         </div>
+    </footer>
             <div class="references">
                 <ul>
                     <li class="ref">
@@ -111,7 +139,7 @@
 					</li>	
                 </ul>
             </div>
-            <div>
+            <div class="otherRefs">
                 <ul class="footerLinks">
                     <li class="interlinks">
                         <a href="http://www.csszengarden.com/214/214.css" title="View the source CSS file of the currently-viewed design.">View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr></a>
@@ -130,10 +158,10 @@
                     </li>
                     <li class="interlinks">
                     </li>
-                    </ul>
-                    
+                    </ul> 
             </div>
-    </footer>
+   
     <script src="main.js"></script>
+    </div>
 </body>
 </html>
